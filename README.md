@@ -55,7 +55,7 @@ Salam. Ini merupakan sebuah script yang memudahkan para seller VPN untuk install
    - Backup & Restore Data
    - Full Orders For Various Services
 
-Berminat ? wa.081374452477
+Berminat ? PM @GHReyz
 
 
 
