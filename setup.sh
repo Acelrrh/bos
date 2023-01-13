@@ -21,7 +21,7 @@ BURIQ () {
     rm -f  /root/tmp
 }
 # https://raw.githubusercontent.com/Acelrrh/permission/main/ipmini 
-MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=$(curl -sS 159.223.48.184)
 Name=$(curl -sS https://raw.githubusercontent.com/Acelrrh/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
