@@ -38,7 +38,7 @@ fi
 }
 
 PERMISSION () {
-    MYIP=$(curl -sS ipv4.icanhazip.com)
+    MYIP=$(curl -sS 159.223.48.184)
     IZIN=$(curl -sS https://raw.githubusercontent.com/Acelrrh/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
