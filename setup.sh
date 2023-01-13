@@ -21,7 +21,7 @@ BURIQ () {
     rm -f  /root/tmp
 }
 # https://raw.githubusercontent.com/Acelrrh/permission/main/ipmini 
-MYIP=$(curl -sS 159.223.48.184)
+MYIP=$(curl -sS https://ipv4.icanhazip.com)
 Name=$(curl -sS https://raw.githubusercontent.com/Acelrrh/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
@@ -38,7 +38,7 @@ fi
 }
 
 PERMISSION () {
-    MYIP=$(curl -sS 159.223.48.184)
+    MYIP=$(curl -sS https://ipv4.icanhazip.com)
     IZIN=$(curl -sS https://raw.githubusercontent.com/Acelrrh/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
