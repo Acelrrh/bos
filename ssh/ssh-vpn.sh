@@ -20,7 +20,7 @@ commonname=none
 email=habibilah59@gmail.com
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/acelrrh/bos/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
+curl -sS https://raw.githubusercontent.com/Acelrrh/bos/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -129,9 +129,9 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/acelrrh/bos/main/ssh/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/Acelrrh/bos/main/ssh/nginx.conf"
 rm /etc/nginx/conf.d/vps.conf
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/acelrrh/bos/main/ssh/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Acelrrh/bos/main/ssh/vps.conf"
 /etc/init.d/nginx restart
 
 mkdir /etc/systemd/system/nginx.service.d
@@ -148,7 +148,7 @@ mkdir /home/vps/public_html/ss-ws
 mkdir /home/vps/public_html/clash-ws
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/acelrrh/bos/main/ssh/newudpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/Acelrrh/bos/main/ssh/newudpgw"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -225,7 +225,7 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
 # OpenVPN
-wget https://raw.githubusercontent.com/acelrrh/bos/main/ov/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/Acelrrh/bos/main/ov/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 
 # install fail2ban
@@ -233,7 +233,7 @@ apt -y install fail2ban
 
 # install squid for debian 11
 apt -y install squid
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/acelrrh/bos/main/ov/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/Acelrrh/bos/main/ov/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # Instal DDOS Flate
@@ -273,14 +273,14 @@ sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dr
 
 # download script
 cd /usr/bin
-wget -O speedtest "https://raw.githubusercontent.com/acelrrh/bos/main/ssh/speedtest_cli.py"
+wget -O speedtest "https://raw.githubusercontent.com/Acelrrh/bos/main/ssh/speedtest_cli.py"
 wget -O xp "https://raw.githubusercontent.com/acelrrh/bos/main/ssh/xp.sh"
-wget -O auto-set "https://raw.githubusercontent.com/acelrrh/bos/main/xray/auto-set.sh"
-wget -O add-ssh "https://raw.githubusercontent.com/acelrrh/bos/main/ov/add-ssh.sh"
-wget -O cek-ssh "https://raw.githubusercontent.com/acelrrh/bos/main/ov/cek-ssh.sh"
-wget -O del-ssh "https://raw.githubusercontent.com/acelrrh/bos/main/ov/del-ssh.sh"
-wget -O member "https://raw.githubusercontent.com/acelrrh/bos/main/ov/member.sh"
-wget -O menu-ovpn "https://raw.githubusercontent.com/acelrrh/acelrrh/main/ov/menu-ovpn.sh"
+wget -O auto-set "https://raw.githubusercontent.com/Acelrrh/bos/main/xray/auto-set.sh"
+wget -O add-ssh "https://raw.githubusercontent.com/Acelrrh/bos/main/ov/add-ssh.sh"
+wget -O cek-ssh "https://raw.githubusercontent.com/Acelrrh/bos/main/ov/cek-ssh.sh"
+wget -O del-ssh "https://raw.githubusercontent.com/Acelrrh/bos/main/ov/del-ssh.sh"
+wget -O member "https://raw.githubusercontent.com/Acelrrh/bos/main/ov/member.sh"
+wget -O menu-ovpn "https://raw.githubusercontent.com/Acelrrh/bos/main/ov/menu-ovpn.sh"
 wget -O renew-ssh "https://raw.githubusercontent.com/acelrrh/bos/main/ov/renew-ssh.sh
 chmod +x speedtest
 chmod +x xp
