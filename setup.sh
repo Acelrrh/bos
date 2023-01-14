@@ -296,7 +296,7 @@ fi
 curl -sS ifconfig.me > /etc/myipvps
 
 echo " "
-echo "====================-[ Reyz-V4 Premium ]-===================="
+echo "====================-[SECRIB. BABANG BOY PREMIUMv4 ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
@@ -317,7 +317,7 @@ echo "   - Trojan WS               : 443" | tee -a log-install.txt
 echo "   - Sodosok WS/GRPC         : 443" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
-echo "   - Timezone                : Asia/Malaysia (GMT +7)"  | tee -a log-install.txt
+echo "   - Timezone                : Asia/Indonesia (GMT +7)"  | tee -a log-install.txt
 echo "   - Fail2Ban                : [ON]"  | tee -a log-install.txt
 echo "   - Dflate                  : [ON]"  | tee -a log-install.txt
 echo "   - IPtables                : [ON]"  | tee -a log-install.txt
@@ -334,11 +334,11 @@ echo "   - Backup & Restore Data" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> About " | tee -a log-install.txt
-echo "   - Script Presented By      : @GHReyz " | tee -a log-install.txt" | tee -a log-install.txt
-echo "   - Contact (Only Text)      : t.me/GHReyz" | tee -a log-install.txt" | tee -a log-install.txt
+echo "   - Script Presented By      : @Anonymouse1701 " | tee -a log-install.txt" | tee -a log-install.txt
+echo "   - Contact (Only Text)      : t.me/Anonymouse1701" | tee -a log-install.txt" | tee -a log-install.txt
 echo "------------------------------------------------------------"
 echo ""
-echo "=============-[ AutoScript By Reyz-V4 ]-==============="
+echo "=============-[ AutoScript By BABANG BOY ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
