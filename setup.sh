@@ -337,7 +337,17 @@ echo "   >>> About " | tee -a log-install.txt
 echo "   - Script Presented By      : @Anonymouse1701 " | tee -a log-install.txt" | tee -a log-install.txt
 echo "   - Contact (Only Text)      : t.me/Anonymouse1701" | tee -a log-install.txt" | tee -a log-install.txt
 echo "------------------------------------------------------------"
-echo ""
+echo "                      
+echo "====================HABIB================================="
+echo "                                                          "
+echo "  __  __            __          __                        "    
+echo " /\ \/\ \          /\ \      __/\ \                       "
+echo " \ \ \_\ \     __  \ \ \____/\_\ \ \____                  "
+echo "  \ \  _  \  /'__`\ \ \ '__`\/\ \ \ '__`\                 "
+echo "   \ \ \ \ \/\ \L\.\_\ \ \L\ \ \ \ \ \L\ \                "
+evho "    \/_/\/_/\/__/\/_/ \/___/  \/_/\/______\               "                                        
+echo "                                                          "
+echo "                                                          "
 echo "=============-[ AutoScript By BABANG BOY ]-==============="
 echo -e ""
 echo ""
