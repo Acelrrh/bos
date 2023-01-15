@@ -15,14 +15,7 @@ echo -e "${NC}${LIGHT}Fuck You!!"
 exit 0
 fi
 clear
-NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/shadowsocks-libev/akun.conf")
-if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; the	clear
-echo ""
-echo "You have no existing clients!"
-exit 1
-fi
 
-clear
 red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
